@@ -150,3 +150,8 @@ window.onload = () => {
     })
     .catch(displayError);
 };
+
+function displayError(error) {
+  const errorElement = document.getElementById("nonexistent-element");
+  errorElement.insertAdjacentElement("beforeend", error);
+}
