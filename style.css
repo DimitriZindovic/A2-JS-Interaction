@@ -40,12 +40,6 @@ nav > a {
   margin-right: 5px;
 }
 
-@media (max-width: 600px) {
-  .inputResearch {
-    width: 100%;
-  }
-}
-
 nav {
   border-bottom: 2px solid #0077ff3a;
   background-color: hsl(215, 42%, 9%);
@@ -56,16 +50,6 @@ nav {
   height: 2%;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    border: none;
-  }
 }
 
 h3 {
@@ -81,25 +65,9 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 600px) {
-  ul {
-    max-width: 100%;
-  }
-
-  ul > li {
-    margin-right: 5%;
-  }
-}
-
 li {
   padding: 5px;
   font-size: 20px;
-}
-
-@media (max-width: 600px) {
-  li {
-    font-size: 15px;
-  }
 }
 
 .card-image {
@@ -112,25 +80,12 @@ li {
   border: 1px solid #0090ff;
 }
 
-@media (max-width: 600px) {
-  .card-image {
-    width: 50%;
-    height: 50%;
-  }
-}
-
 .description-pokemon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 5%;
   width: 30%;
-}
-
-@media (max-width: 600px) {
-  .description-pokemon {
-    width: 90%;
-  }
 }
 
 .card-pokemon {
@@ -140,12 +95,6 @@ li {
   border-radius: 5px;
   align-items: center;
   margin: 10%;
-}
-
-@media (max-width: 600px) {
-  .card-pokemon {
-    flex-direction: column;
-  }
 }
 
 .button-add-cart {
@@ -160,12 +109,6 @@ li {
   width: 60%;
   font-weight: bold;
   margin: 5%;
-}
-
-@media (max-width: 600px) {
-  .button-add-cart {
-    width: 100%;
-  }
 }
 
 .error {
@@ -247,6 +190,13 @@ li {
   padding: 5px;
 }
 
+#random-pokemon-sprite {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 600px) {
   .list-pokemon {
     flex-direction: column;
@@ -261,15 +211,6 @@ li {
   justify-content: space-between;
   margin-right: 5%;
   width: 60%;
-}
-
-@media (max-width: 600px) {
-  .description-product {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 footer {
@@ -301,13 +242,62 @@ footer {
   border: 1px solid #0090ff;
 }
 
-/* Styles for screens smaller than 600px */
+main {
+  width: 100%;
+}
+
 @media (max-width: 600px) {
+  .inputResearch {
+    width: 100%;
+  }
+
   .element {
     border-radius: 500px;
   }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border: none;
+  }
+
+  ul {
+    max-width: 100%;
+  }
+
+  ul > li {
+    margin-right: 5%;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .button-add-cart {
+    width: 100%;
+  }
+
+  .description-product {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
-main {
-  width: 100%;
+@media (max-width: 1000px) {
+  .card-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .description-pokemon {
+    width: 90%;
+  }
+
+  .card-pokemon {
+    flex-direction: column;
+  }
 }
